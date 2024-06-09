@@ -1,0 +1,461 @@
+@media (max-width: 900px) {
+    .article {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+        padding: 10px;
+    }
+
+    .article {
+        flex: 1 1 100%;
+    }
+
+    .slika img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #39843c;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 4em;
+}
+
+.bojaPoruke{
+    color: red;
+}
+
+.news-item {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.news-item h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.news-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.news-image {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.news-content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.news-content p strong {
+    font-weight: bold;
+}
+
+.ljubimci {
+    margin-top: 20px;
+}
+
+.ljubimci h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-left: 4px solid #4CAF50;
+    padding-left: 5px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.ljubimci-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unos-vijesti-btn {
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.current-image {
+    margin-bottom: 20px;
+}
+
+.current-image img {
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.unos-vijesti-btn:hover {
+    background-color: #45a049;
+}
+
+.article .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.article .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+}
+
+.article .buttons .edit-btn {
+    background-color: #008CBA;
+}
+
+.article .buttons .edit-btn:hover {
+    background-color: #007B9A;
+}
+
+.article .buttons .delete-btn {
+    background-color: #f44336;
+}
+
+.article .buttons .delete-btn:hover {
+    background-color: #da190b;
+}
+
+.ljubimci_img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ljubimci_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media_body {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.media_body .title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.media_body .title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.media_body .title a:hover {
+    color: #4CAF50;
+}
+
+.media_body .sazetak {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.category {
+    font-size: 1.5em;
+    color: #39843c;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.row p span {
+    font-weight: bold;
+    color: #333;
+}
+
+.slika img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.about {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+}
+
+.sadrzaj {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: large;
+}
+
+.login-body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.registration-body {
+    flex: 1;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registration-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.registration-section h2 {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+
+.registration-form span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field-textual {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
